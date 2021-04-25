@@ -1,0 +1,44 @@
+body {
+	font-family: Arial;
+	background-color: #fafafa;
+}
+.jumbotron {
+	background-color: #fafafa;
+}
+#homeWrapper {
+	position: fixed;
+	top: 20px;
+}
+#homeWrapper i {
+	font-size: 30px;
+	height: 40px;
+	width: 40px;
+}
+#displayTitle {
+	background-color: #6c757e;
+	width: 300px;
+}
+.divInput,.middleDiv {
+	height: 80px;
+	width: 80px;
+	margin: 5px;
+}
+#labelSpeed, .labelPlayer {
+	font-size: 24px;
+	font-style: italic;
+}
+.divInput {
+	background-color: #6c757e;
+	border-radius: 5px;
+	font-size: 18px;
+}
+#startBtn, #dropdownSpeed, #dropdownInput {
+	background-color: #036c8c;
+	font-size: 20px;
+	font-weight: bold;
+	height: 40px;
+	width: 140px;
+}
+#lastTitle, #bestTitle, #lastScore, #bestScore {
+	font-weight: bold;
+}

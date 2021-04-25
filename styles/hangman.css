@@ -1,0 +1,42 @@
+body {
+	font-family: Arial;
+	background-color: #fafafa;
+}
+.jumbotron {
+	background-color: #fafafa;
+}
+#homeWrapper {
+	position: fixed;
+	top: 20px;
+}
+#homeWrapper i {
+	font-size: 30px;
+	height: 40px;
+	width: 40px;
+}
+#displayTitle {
+	width: 300px;
+	background-color: #1d333f;
+}
+#display {
+	font-size: 32px;
+	height: 150px;
+}
+.blankSpan {
+	font-size: 32px;
+	font-family: Century Gothic;
+}
+#startBtn {
+	/*#ff4404*/
+	background-color: #ff4404;
+	font-size: 20px;
+	font-weight: bold;
+	height: 40px;
+	width: 140px;
+}
+#columnCat {
+	height: 60px;
+}
+#category, #paraLives {
+	font-size: 32px;
+}
