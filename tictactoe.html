@@ -22,6 +22,10 @@
 		<a href="index.html"><i class="fas fa-home"></i></a>
 	</div>
 
+	<div id="helpWrapper" class="container">
+		<a id="helpBtn" title="How to Play" data-toggle="modal" data-target="#howToModal"><i class="fas fa-question text-primary"></i></a>
+	</div>
+
 	<div class="container text-center">
 		<div class="row">
 			<div class="col-sm-12">
@@ -112,6 +116,42 @@
 				<div class="modal-body d-flex justify-content-around">
 					<button id="playerFirst" type="button" class="btn text-white">X</button>
 					<button id="compFirst" type="button" class="btn text-white">O</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="howToModal" tabindex="-1" role="dialog" aria-labelledby="howToModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="howToModalLabel">How to Play</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h2>1) Introduction</h2>
+					<ul>
+						<li><p>Two player game, each player take turns marking the spaces in the 3x3 grid.</p></li>
+						<li><p>You can choose either X or O as their marking by clicking the <b>Select</b> button.</p></li>
+						<li><p>Select who you want to play with by clicking the <b>Mode</b> button.</p></li>
+					</ul>
+			        <h2>2) How to Start</h2>
+					<ul>
+						<li><p>Click the <b>Play</b> button and choose who will go first.</p></li>
+						<li><p>Blue indicate the first player.</p></li>
+						<li><p>Red indicate second player or AI.</p></li>
+					</ul>
+					<h2>3) Gameplay</h2>
+					<ul>
+						<li><p>To win the game, a player must place three of their marks in vertical, horizontal or vertical row.</p></li>
+						<li><p>Each player take turn marking the empty space on the grid so player can intercept their opponent's attempt to make a row.</p></li>
+						<li><p>It is possible to get a draw in a game when both player unable to make a row.</p></li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 				</div>
 			</div>
 		</div>

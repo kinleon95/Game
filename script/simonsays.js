@@ -127,10 +127,10 @@ function displayRound() {
 }
 
 function checkInput() {
-	if (!(targetInput.length == playerInput.length)) {
-		return;
-	}
 	for (let i = 0; i < targetInput.length; i++) {
+		if (playerInput[i] == undefined) {
+			return;
+		}
 		if (targetInput[i] != playerInput[i]) {
 			titleRound.style.backgroundColor = "#d93251";
 			titleRound.innerHTML = "Game Over";
@@ -139,7 +139,7 @@ function checkInput() {
 				titleRound.innerHTML = "Simon Says";
 			}, 2400);
 			if (speed == "Normal") {
-				normalScore[0] = playerInput.length - 1;
+				normalScore[0] = targetInput.length - 1;
 				document.getElementById("lastScore").innerHTML = normalScore[0];
 				if (normalScore[0] > normalScore[1]) {
 					normalScore[1] = normalScore[0];
@@ -147,7 +147,7 @@ function checkInput() {
 				}
 			}
 			else if (speed == "Fast") {
-				fastScore[0] = playerInput.length - 1;
+				fastScore[0] = targetInput.length - 1;
 				document.getElementById("lastScore").innerHTML = fastScore[0];
 				if (fastScore[0] > fastScore[1]) {
 					fastScore[1] = fastScore[0];

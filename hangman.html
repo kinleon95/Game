@@ -23,6 +23,10 @@
 		<a href="index.html"><i class="fas fa-home"></i></a>
 	</div>
 
+	<div id="helpWrapper" class="container">
+		<a id="helpBtn" title="How to Play" data-toggle="modal" data-target="#howToModal"><i class="fas fa-question text-primary"></i></a>
+	</div>
+
 	<div class="container">
 		<div class="row text-center">
 			<div id="display" class="col-sm-12">
@@ -48,6 +52,42 @@
 			</div>
 		</div>
 
+	</div>
+
+	<div class="modal fade" id="howToModal" tabindex="-1" role="dialog" aria-labelledby="howToModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="howToModalLabel">How to Play</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h2>1) Introduction</h2>
+					<ul>
+						<li><p>The game Hangman shows a word in blank to the player to guess by suggesting letters.</p></li>
+						<li><p>The player have a certain number of guesses.</li>
+						<li><p>The series of word to guess is common knowledge.</p></li>
+					</ul>
+			        <h2>2) How to Start</h2>
+					<ul>
+						<li><p>Click the <b>Play</b> button to start the game.</p></li>
+						<li><p>The hearts on the right shows how many tries a player has.</p></li>
+						<li><p>Click the letters below if you want to guess the letter for the blank word.</p></li>
+					</ul>
+					<h2>3) Gameplay</h2>
+					<ul>
+						<li><p>Player are given a category to guess from.</p></li>
+						<li><p>The letter will show blue when letter is guessed right while grey shows incorrect.</p></li>
+						<li><p>Once you solved a puzzle, there will be a new word to solve.</p></li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- jQuery library -->

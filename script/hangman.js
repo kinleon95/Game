@@ -164,11 +164,19 @@ function checkWin() {
 		startBtn.disabled = false;
 		interactAllBtn(false);
 		titleHangman.innerHTML = "Game Over"
+		revealLetter();
 		titleHangman.style.backgroundColor = "#d93251";
 		setTimeout(function() {
 			titleHangman.style.backgroundColor = "#1d333f";
 			titleHangman.innerHTML = "Hangman";
 		}, 2400);
+	}
+}
+
+function revealLetter() {
+	for (let i = 0; i < words[catRandom][random].length; i++) {
+		let letter = document.getElementById("letter"+ i);
+		letter.innerHTML = words[catRandom][random].charAt(i);
 	}
 }
 
